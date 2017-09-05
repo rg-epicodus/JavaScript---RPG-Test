@@ -1,3 +1,4 @@
+
 let player = {
   health: 100,
   power: 20
@@ -23,7 +24,7 @@ const attack = () => {
   }
 
   attackButton.disabled = true;
-  gameMessage.innerText = "Opponent is about to strike!"
+  // gameMessage.innerText = "Opponent is about to strike!"
 
   setTimeout(() =>{
     let opponentAttack = determinedAttack(opponent.power);
@@ -69,3 +70,16 @@ const printToScreen = () => {
 }
 
 printToScreen();
+
+
+// health potion testing
+function usePotion(amt) {
+  return function(){
+    if (player.health < 100) {
+      player.health += amt;
+      if (player.health >= 100) {
+        player.health = 100;
+      }
+    }
+  }
+}

@@ -17,7 +17,7 @@ High Fantasy Tolkien lore.
 | Character Creation  | Bio |  |
 | Character Creation  | Race |  |
 | Character Creation  | Stats |  |
-| Battle System  | Basic system |  |
+| Battle System  | Basic system | v1 complete |
 | Battle System  | Str event |  |
 | Battle System  | Int/Dex events |  |
 | Battle System  | Select type of event |  |
@@ -25,9 +25,11 @@ High Fantasy Tolkien lore.
 | Leveling System  | XP after event |  |
 | Leveling System  | XP hits threshold | Level up event |
 | Leveling System  |Stat point on level up |  |
-| Inventory  | Health Potion |  |
+| Inventory  | Health Potion | in progress |
 | Inventory  | Item adds modifier to event |  |
 | Inventory  | Item adds modifier to multiple events |  |
+| Save System  | Progress is saved for user |  |
+
 
 ## Known Bugs
 * "Rich Garrick" <richg341@gmail.com>
