@@ -47,3 +47,5 @@ settings.gradle
 .idea/**/gradle.xml
 .idea/**/libraries
 *.iml
+
+bower_components/
