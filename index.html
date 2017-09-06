@@ -2,18 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <title>RPG</title>
   </head>
   <body>
-    <h3>Oppenent's Health <span id="opponent-health"></span></h3>
-    <h3>Player Health <span id="player-health"></span></h3>
+    <div class="container">
+      <h3>Oppenent's Health <span id="opponent-health"></span></h3>
+      <h3>Player Health <span id="player-health"></span></h3>
 
-    <button id="attack-button" onclick="attack()">Attack</button>
-    <button id="potion-button" onclick="usePotion()">Use Potion</button>
-    <button id="restart-button" hidden="true" onclick="restart()">Restart Game</button>
-    <h3 id="game-message"></h3>
+      <button id="attack-button" onclick="attack()" class="btn-success">Attack</button>
+      <button id="restoreHealth-button" onclick="RestoreHealth()" class="btn-success">Cast Restore Health</button>
+      <button id="restart-button" hidden="true" onclick="restart()" class="btn-success">Restart Game</button>
+      <h3 id="game-message"></h3>
+      <h3 id="time"></h3>
+    </div>
   </body>
+  <script src="bower_components/moment/min/moment.min.js"></script>
   <script type="text/javascript" src="js/rpg.js"></script>
-  <script type="text/javascript" src="js/rpg-interface.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/spell_Restore_Health-interface.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="build/js/app.js"></script>
+
 </html>
