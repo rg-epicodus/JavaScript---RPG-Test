@@ -1,18 +1,30 @@
-
-let player = {
-  health: 100,
-  power: 20
+function Player() {
+  this.health = 100;
+  this.power = 20;
 }
 
-let opponent = {
-  health: 100,
-  power: 20
+// let player = {
+//   health: 100,
+//   power: 20
+// }
+//
+// let opponent = {
+//   health: 100,
+//   power: 20
+// }
+Player.prototype.attack = function() {
+  return this.power;
+}
+
+Player.prototype.getHit = function(power) {
+  this.health -= power;
+  if (this.health <= 0) {
+    
+  }
 }
 
 const attack = () => {
-  let attackButton = document.getElementById('attack-button');
-  let restartButton = document.getElementById('restart-button');
-  let gameMessage = document.getElementById('game-message');
+
 
   let playerAttack = determinedAttack(player.power);
   opponent.health -= playerAttack;
